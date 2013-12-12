@@ -1,27 +1,33 @@
+.. image:: https://d2xtrvzo9unrru.cloudfront.net/brands/smartfile/logo.png
+   :alt: SmartFile
+
+A `SmartFile`_ Open Source project. `Read more`_ about how SmartFile
+uses and contributes to Open Source software.
+
 jquery-easybytes
 ================
 
 If you store files sizes in your web application, it makes sense to use bytes server side. This widget makes this more user friendly on the client side.
 
-# Getting Started
+Getting Started
+------------
 
-## Including it on your page
+Including it on your page
+------------
 
-Include jQuery and the plugin on a page. Then select a input to convert to easybytes and call the easybytes method.
+Include jQuery and the plugin on a page.
+Then select a input to convert to easybytes and call the easybytes method.::
 
-```html
-<input type="text" name="filesize">
-<script src="jquery.js"></script>
-<script src="jquery.easybytes.js"></script>
-<script>
+
+    <input type="text" name="filesize">
+    <script src="jquery.js"></script>
+    <script src="jquery.easybytes.js"></script>
+    <script>
         $("input").easybytes();
-</script>
-```
+    </script>
 
-For more information on how to setup a rules and customizations, see options below.
-
-## Options
-
+Options
+------------
 
 * `multiple`
     * Base multiplier to convert up to next unit.
@@ -52,7 +58,8 @@ For more information on how to setup a rules and customizations, see options bel
     * string or false
     * Default: false
 
-# Reporting an Issue
+Reporting an Issue
+------------
 
 Make sure the problem you're addressing is reproducible.
 Use http://jsbin.com or http://jsfiddle.net to provide a test page.
@@ -61,9 +68,14 @@ What version of the plug-in is the issue reproducible in? Is it reproducible aft
     
 Then, report the issue via github
 
-# Contributing
+Contributing
+------------
 
 Please send a pull request via github.
 
-### License
+License
+------------
 Copyright (c) 2013 SmartFile Licensed under the MIT license.
+
+.. _SmartFile: http://www.smartfile.com/
+.. _Read more: http://www.smartfile.com/open-source.html
