@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery easybytes Example Page</title>
+	<link href="css/jquery.easybytes.css" rel="stylesheet">
+	<style>
+		input { margin-left: 20px; }
+	</style>
+</head>
+<body>
+
+<h1>Welcome to jQuery easybytes plugin!</h1>
+
+<div class="ui-widget">
+	<p>This page demonstrates the easybytes widget.</p>
+	<form action="" method="get">
+		<p>Simplest form of easybytes.</p>
+		<input type="text" name="filesize" id="easybytes">
+		<p>Easybytes set to abbreviate units of measure.</p>
+		<input type="text" name="filesize" id="easybytes-abbr">
+		<p>Easybytes set to abbreviate units of measure and change default unit to MB.</p>
+		<input type="text" name="filesize" id="easybytes-unit">
+		<p>Easybytes prepopulated with 1 GB.</p>
+		<input type="text" name="filesize" id="preset-easybytes" value="1073741824">
+		<p>Easybytes prepopulated with 1 GB and set to multiple of 1000.</p>
+		<input type="text" name="filesize" id="preset-easybytes-base1000" value="1073741824">
+		<p>Easybytes with a placeholder.</p>
+		<input type="text" name="filesize" id="easybytes-placeholder" placeholder="File Size">
+	</form>
+</div>
+
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easybytes.js"></script>
+<script>
+$(function() {
+	$( '#easybytes' ).easybytes();
+	$( '#easybytes-abbr' ).easybytes({'abbr': true});
+	$( '#easybytes-unit' ).easybytes({'abbr': true, 'defaultUnit': 2});
+	$( '#preset-easybytes' ).easybytes();
+	$( '#preset-easybytes-base1000' ).easybytes({'multiple':1000});
+	$( '#easybytes-placeholder' ).easybytes();
+});
+</script>
+</body>
+</html>
